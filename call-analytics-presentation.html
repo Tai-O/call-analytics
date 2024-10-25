@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer Call Analytics Results</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+        .slide {
+            width: 100vw;
+            height: 100vh;
+            display: none;
+            padding: 40px;
+            box-sizing: border-box;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+        .slide.active {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .title {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .subtitle {
+            font-size: 1.8em;
+            color: #34495e;
+            margin-bottom: 20px;
+        }
+        .content {
+            font-size: 1.4em;
+            color: #2c3e50;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .chart {
+            width: 90%;
+            max-width: 600px;
+            height: auto;
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .chart img {
+            width: 80%; /* Reduce to 80% of the chart div */
+            max-width: 400px; /* Further limit max width */
+            height: auto;
+            border-radius: 10px;
+        }
+        .flex-container {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            justify-content: center;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .navigation {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            gap: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 5px;
+            background: #3498db;
+            color: white;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #2980b9;
+        }
+        .list-item {
+            margin: 15px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .bullet {
+            width: 10px;
+            height: 10px;
+            background: #3498db;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide active">
+        <h1 class="title">Customer Call Analytics Results</h1>
+        <h2 class="subtitle">Improving Customer Service Through Data-Driven Insights</h2>
+        <div class="content">
+            <div class="list-item">
+                <div class="bullet"></div>
+                <p>Comprehensive analysis of customer service interactions</p>
+            </div>
+            <div class="list-item">
+                <div class="bullet"></div>
+                <p>AI-powered insights for service improvement</p>
+            </div>
+            <div class="list-item">
+                <div class="bullet"></div>
+                <p>Data-driven recommendations for next steps</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide">
+        <h2 class="subtitle">Key Findings: Sentiment Analysis</h2>
+        <div class="flex-container">
+            <div class="chart">
+                <img src="sentiment_distribution.png" alt="Sentiment Distribution Chart">
+            </div>
+            <div class="content">
+                <div class="list-item">
+                    <div class="bullet"></div>
+                    <p>97% Positive Sentiment</p>
+                </div>
+                <div class="list-item">
+                    <div class="bullet"></div>
+                    <p>3% Areas of Concern</p>
+                </div>
+                <div class="list-item">
+                    <div class="bullet"></div>
+                    <p>0% Neutral Interactions</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide">
+        <h2 class="subtitle">Common Topics & Patterns</h2>
+        <div class="flex-container">
+            <div class="chart">
+                <img src="topics_distribution.png" alt="Topics Distribution Chart">
+            </div>
+            <div class="content">
+                <div class="list-item">
+                    <div class="bullet"></div>
+                    <p>Policy Claims (21%)</p>
+                </div>
+                <div class="list-item">
+                    <div class="bullet"></div>
+                    <p>Agent Procedures (18.51%)</p>
+                </div>
+                <div class="list-item">
+                    <div class="bullet"></div>
+                    <p>Copay Information (18.25%)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide">
+        <h2 class="subtitle">LLM-Powered Insights</h2>
+        <div class="content">
+            <div class="list-item">
+                <div class="bullet"></div>
+                <p>Faster Issue Identification and Summarization</p>
+            </div>
+            <div class="list-item">
+                <div class="bullet"></div>
+                <p>Improved Customer Routing</p>
+            </div>
+            <div class="list-item">
+                <div class="bullet"></div>
+                <p>Proactive Problem Resolution</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide">
+        <h2 class="subtitle">Technical Implementation</h2>
+        <div class="content">
+            <div class="list-item">
+                <div class="bullet"></div>
+                <p>Azure OpenAI Integration</p>
+            </div>
+            <div class="list-item">
+                <div class="bullet"></div>
+                <p>Vector Database for Semantic Search Retrieval</p>
+            </div>
+            <div class="list-item">
+                <div class="bullet"></div>
+                <p>Automated Analysis Pipeline</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide">
+        <h2 class="subtitle">Next Steps & Recommendations</h2>
+        <div class="content">
+            <div class="list-item">
+                <div class="bullet"></div>
+                <p>Improve search & chunking for RAG system</p>
+            </div>
+            <div class="list-item">
+                <div class="bullet"></div>
+                <p>Implement Real-time Analytics</p>
+            </div>
+            <div class="list-item">
+                <div class="bullet"></div>
+                <p>Develop Predictive Models</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="navigation">
+        <button onclick="prevSlide()">Previous</button>
+        <button onclick="nextSlide()">Next</button>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+
+        function showSlide(n) {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (n + slides.length) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+
+        function nextSlide() {
+            showSlide(currentSlide + 1);
+        }
+
+        function prevSlide() {
+            showSlide(currentSlide - 1);
+        }
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowRight') nextSlide();
+            if (e.key === 'ArrowLeft') prevSlide();
+        });
+    </script>
+</body>
+</html>
