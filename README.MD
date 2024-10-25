@@ -57,7 +57,7 @@ Get Open AI API KEY
 - Create an account on https://platform.openai.com/api-keys and get an API KEY (Needed to access GPT 3.5 turbo model)
 - Open command prompt (Windows)
 - ```bash
-    setx OPENAI_API_KEY "your-api-key-here"
+    setx OPENAI_API_KEY "api-key-here"
     ```
 - Permanent setup: To make the setup permanent, add the variable through the system properties as follows:
 
@@ -72,9 +72,9 @@ Update the Azure OpenAI credentials in `config/config.py`:
 
 ```python
 AZURE_CONFIG = {
-    "endpoint": "your-endpoint",
-    "deployment": "your-deployment",
-    "api_key": "your-api-key"
+    "endpoint": "endpoint",
+    "deployment": "deployment",
+    "api_key": "api-key"
 }
 ```
 
